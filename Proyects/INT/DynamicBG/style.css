@@ -1,0 +1,121 @@
+body{
+    background-color: rgb(60, 0, 88);
+}
+.circulos {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+    filter: blur(3em);
+    animation:circulo1 100s linear infinite both;
+}
+.circulos .circulo {
+    position: fixed;
+    width: 50%;
+    height: 50%;
+    animation:circulo1 30s linear infinite both;
+}
+.circulos .circulo1 .path {
+    fill: rgb(9, 255, 0);
+}
+.circulos .circulo1 {
+    top: 0;
+    left: 0;
+    animation:circulo1 9s infinite both;
+}
+@keyframes circulo1 {
+    from {
+        transform: rotate(0deg) scale(3);
+    }
+    to{
+        transform: rotate(360deg) scale(3);
+    }
+}
+.circulos .circulo2 {
+    top: 0;
+    right: 0;
+}
+.circulos .circulo2 .path {
+    fill: rgba(228, 17, 52, 0.993);
+}
+.circulos .circulo2 {
+    top: 0;
+    right: 0;
+    animation:circulo2 13s infinite both;
+}
+@keyframes circulo2 {
+    from {
+        transform: rotate(0deg) scale(3);
+    }
+    to{
+        transform: rotate(360deg) scale(3);
+    }
+}
+.circulos .circulo3 { 
+    bottom: 0;
+    left: 0;    
+}
+.circulos .circulo3 .path {
+    fill: rgba(238, 118, 6, 0.575);
+}
+.circulos .circulo3 {
+    bottom: 0;
+    left: 0;
+    animation:circulo3 16s infinite both;
+}
+@keyframes circulo3 {
+    from {
+        transform: rotate(0deg) scale(3);
+    }
+    to{
+        transform: rotate(360deg) scale(3);
+    }
+}
+.circulos .circulo4 { 
+    bottom: 0;
+    right: 0;
+}
+.circulos .circulo4 .path {
+    fill: rgba(15, 129, 182, 0.575);
+}
+.circulos .circulo4 {
+    bottom: 0;
+    right: 0;
+    animation:circulo4 14s infinite both;
+}
+@keyframes circulo4 {
+    from {
+        transform: rotate(0deg) scale(3);
+    }
+    to{
+        transform: rotate(360deg) scale(3);
+    }
+    
+}
+
+main{
+    position: relative;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    mix-blend-mode: difference;
+}
+h1 {
+    color: white;
+    font-size: 5em;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+p{
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    animation:fadeIn 2s ease-in-out;;
+}

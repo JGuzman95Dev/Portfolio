@@ -1,0 +1,29 @@
+
+/* #nota{
+    height: 100px;
+    background: url(./Img/nota.png);
+    background-size: cover;
+    background-position: center;
+} */
+body{
+    background: url(./Img/fondo2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#navbar{
+    background-color: rgba(209, 193, 124, 0.295);
+}
+
+#aboutme{
+    text-align: center;
+    align-items: center;
+}
+
+.aboutme{
+    padding: 12px;
+}
+
+#carrousel > div > img {
+    border-radius: 50%;
+}
